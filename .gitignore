@@ -55,6 +55,7 @@ out/**
 # Distribution / packaging
 .Python
 env/
+env1/
 build/
 develop-eggs/
 dist/
