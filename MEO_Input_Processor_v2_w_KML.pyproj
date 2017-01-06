@@ -5,14 +5,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{734ac13a-ddef-40f1-8684-878c283fd382}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>beacon_decode_v1.py</StartupFile>
+    <StartupFile>MEO_Input_processor_w_KML_v4_final.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <InterpreterId />
-    <InterpreterVersion />
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
@@ -39,6 +39,22 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="USCG_drift_test" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>{d49850fc-77a7-429a-9879-1e61e01d45cc}</Id>
+      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
+      <Version>2.7</Version>
+      <Description>env (Python 64-bit 2.7)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>Amd64</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />

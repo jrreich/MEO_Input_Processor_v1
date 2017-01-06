@@ -134,7 +134,7 @@ data_cols = ['DataType','BcnId15','BcnId30','SourceId','TimeFirst','TimeLast','L
 data_cols = [0,1,2,4,8,9,10,11,12,13,14,17,18,19,20,21,22,36,37,47]
 
 print('\n\nImporting - ' + XLSXfolder +'\\' + InputXLSX)
-df = pd.read_excel(XLSXfolder +'\\' + InputXLSX, index_col = 'TimeSolutionAdded', parse_dates = True, parse_cols =  data_cols)
+df = pd.read_excel(XLSXfolder +'\\' + InputXLSX, index_col = 'TimeSolutionAdded', parse_cols =  data_cols) #parse_dates = True,
 df['TimeFirst']=pd.to_datetime(df['TimeFirst'], errors = 'ignore') ### FIX THIS WHEN TimeFirst is already a datetime.time 12/9 
 df['TimeLast']=pd.to_datetime(df['TimeLast'], errors = 'ignore')
 df['TimeSolutionGenerated']=pd.to_datetime(df['TimeSolutionGenerated'], errors = 'ignore')
@@ -390,7 +390,7 @@ if KML_generate == 'Y':
     
 if LEOGEO == 'Y':
     print 'Reading LEO file - ' + XLSXfolder +'\\' + LEOGEO_file
-    df = pd.read_excel(XLSXfolder +'\\' + LEOGEO_file, index_col = 'AddTime', parse_dates = True)
+    df = pd.read_excel(XLSXfolder +'\\' + LEOGEO_file, index_col = 'AddTime') #, parse_dates = True)
     df = df[(df.BcnId15 == BeaconID)]
     if df.empty: 
         print(LEOGEO_file + 'did not contain any data that matched')    
