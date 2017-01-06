@@ -11,7 +11,7 @@
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <InterpreterId>{710bbd1d-3e0b-4808-a960-1d501025b5ed}</InterpreterId>
+    <InterpreterId>{9b7ead12-34fd-43a6-85aa-4b441076db48}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
@@ -42,11 +42,11 @@
     <Folder Include="USCG_drift_test" />
   </ItemGroup>
   <ItemGroup>
-    <Interpreter Include="env1\">
-      <Id>{710bbd1d-3e0b-4808-a960-1d501025b5ed}</Id>
+    <Interpreter Include="env\">
+      <Id>{9b7ead12-34fd-43a6-85aa-4b441076db48}</Id>
       <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
       <Version>2.7</Version>
-      <Description>env1 (Python 64-bit 2.7)</Description>
+      <Description>env (Python 64-bit 2.7)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <LibraryPath>Lib\</LibraryPath>
