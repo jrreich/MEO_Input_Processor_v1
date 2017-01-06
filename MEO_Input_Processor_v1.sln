@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "MEO_Input_Processor_v1", "MEO_Input_Processor_v1.pyproj", "{792F2BE6-0904-4BA4-B0BE-5108D2FAC576}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9E0B4AEC-CDD2-4157-B5A1-E18C49C7EB05}"
+	ProjectSection(SolutionItems) = preProject
+		beacon_decode_v1.py = beacon_decode_v1.py
+		MEO_Input_processor_w_KML_v2_final.py = MEO_Input_processor_w_KML_v2_final.py
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{792F2BE6-0904-4BA4-B0BE-5108D2FAC576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792F2BE6-0904-4BA4-B0BE-5108D2FAC576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

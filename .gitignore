@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Files in USCG drift test directory
+USCG_drift_test/**
+
+# Output folder files
+out/**

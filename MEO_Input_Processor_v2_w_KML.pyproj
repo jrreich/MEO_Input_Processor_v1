@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{734ac13a-ddef-40f1-8684-878c283fd382}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>beacon_decode_v1.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="icon43.png" />
+    <Content Include="USCG_drift_test\icon43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="beacon_decode_v1.py" />
+    <Compile Include="beacon_test1.py" />
+    <Compile Include="MEOInput_processor_w_KML_v1.py" />
+    <Compile Include="MEO_Input_Processor_v1.py" />
+    <Compile Include="MEO_Input_processor_w_KML_v1.py" />
+    <Compile Include="MEO_Input_processor_w_KML_v2.py" />
+    <Compile Include="MEO_Input_processor_w_KML_v2_final.py" />
+    <Compile Include="MEO_Input_processor_w_KML_v3_final.py" />
+    <Compile Include="MEO_Input_processor_w_KML_v4_final.py" />
+    <Compile Include="SMLB_to_GA_v1.py" />
+    <Compile Include="SMLB_to_KML_v1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="USCG_drift_test" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
