@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{734ac13a-ddef-40f1-8684-878c283fd382}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>MEO_Input_processor_w_KML_v4_final.py</StartupFile>
+    <StartupFile>MS_SQL_connection.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -35,6 +35,7 @@
     <Compile Include="MEO_Input_processor_w_KML_v2_final.py" />
     <Compile Include="MEO_Input_processor_w_KML_v3_final.py" />
     <Compile Include="MEO_Input_processor_w_KML_v4_final.py" />
+    <Compile Include="MS_SQL_connection.py" />
     <Compile Include="SMLB_to_GA_v1.py" />
     <Compile Include="SMLB_to_KML_v1.py" />
   </ItemGroup>

@@ -69,3 +69,8 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+
+MCC_tables/*
+
+*.suo
+/MS_SQL_connection.py

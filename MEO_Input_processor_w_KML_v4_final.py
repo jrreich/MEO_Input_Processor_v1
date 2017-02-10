@@ -10,10 +10,9 @@ from datetime import datetime
 import csv
 import beacon_decode_v1 as bcn
 import simplekml
+import re
 
 kml = simplekml.Kml()
-
-#import re # need eventually if you want to do regex for beacon ID
 
 pd.options.mode.chained_assignment = None # turn off SettingWithCopyWarning
 
@@ -113,10 +112,10 @@ configdict = read_config_file(configfile,2,22,2) # Reading configfile for items 
 Lat_GT = configdict['Lat_GT']
 Long_GT = configdict['Long_GT']
 Location = configdict['Location']    
-MEOLUT = int(configdict['MEOLUT'])
-XLSXfolder = str(configdict['XLSXfolder'])
-InputXLSX = str(configdict['InputXLSX'])
-BeaconID = str(configdict['BeaconID'])
+MEOLUT = int(configdict['MEOLUT']) # could be a list 
+XLSXfolder = str(configdict['XLSXfolder']) #not needed
+InputXLSX = str(configdict['InputXLSX']) #not needed
+BeaconID = str(configdict['BeaconID']) # will be a regex string see below
 # beacon_re = re.compile(BeaconIn) need eventually if you want to do regex for beacon ID
 TimeStart = datetime(*xlrd.xldate_as_tuple(configdict['TimeStart'],0))
 TimeEnd = datetime(*xlrd.xldate_as_tuple(configdict['TimeEnd'],0))
